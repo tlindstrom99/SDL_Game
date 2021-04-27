@@ -22,6 +22,7 @@ public:
 	    int	m_Height;
 	    int lives;
       int score;
+      TTF_Font *font;
 
 	    HUD();
 	    HUD(int life);
