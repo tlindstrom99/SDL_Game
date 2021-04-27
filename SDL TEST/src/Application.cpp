@@ -96,6 +96,7 @@ int main()
 	ParticleEmitter peRed(50, "res/img/red.png");
 	ParticleEmitter peWhite(30, "res/img/white.png");
 	TSGround tsGround;
+	HUD UI;
 
 	bg.m_Player = &plNew;
 	cloudsBG.m_Player = &plNew;
@@ -112,6 +113,7 @@ int main()
 	theGameEngine.AddGameObject(&tsGround);
 	theGameEngine.AddGameObject(&peRed);
 	theGameEngine.AddGameObject(&peWhite);
+	theGameEngine.AddGameObject(&UI);
 	theGameEngine.Run();
 	/*******************************/
 	std::cin.get();
