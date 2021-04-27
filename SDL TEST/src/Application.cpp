@@ -17,6 +17,7 @@
 #include "SpriteController.h"
 #include "ParticleEmitter.h"
 #include "Coins.h"
+#include "HUD.h"
 
 int main()
 {
@@ -52,7 +53,7 @@ int main()
 	{
 		std::cout << "asdf";
 	}
-	
+
 	{
 		std::map<char, int> first;
 
@@ -69,7 +70,7 @@ int main()
 	*/
 	GameEngine theGameEngine;
 	SDL_Renderer* renderer = theGameEngine.GetRenderer();
-	
+
 	int groundHeight = 490; // from top
 	/*sprites*/
 	Sprite runSprite("res/img/Run_Sprite.png", renderer, "run", 384, 7);
