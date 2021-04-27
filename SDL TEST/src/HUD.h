@@ -3,7 +3,8 @@
 #include "Vector2.h"
 #include "Texture.h"
 #include <iostream>
-#include "SDL_ttf.h"
+#include <SDL_ttf.h>
+#include "Collision.h"
 
 class HUD : public GameObject
 {
@@ -30,6 +31,8 @@ public:
       int getScore();
 	    void Init(GameEngine* ge) override;
 	    void Render() override;
+      void Update(double deltaTime);
+      void HandleInput(const SDL_Event& event, double deltaTime);
 	    void LostLife();
       void AddScore(int scoreIncrease);
 };
